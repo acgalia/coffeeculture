@@ -5,7 +5,14 @@
 <?php if(isset($_SESSION['admin'])){ ?>
         <div class="container">
 			<div class="row">
-				<div class="col">
+				<div class="col-lg-12">
+					<!-- breadcrumb -->
+					<nav aria-label="breadcrumb">
+					  <ol class="breadcrumb">
+					    <li class="breadcrumb-item active" aria-current="page"><a href="items.php">Items</a></li>
+					    <li class="breadcrumb-item"><a href="orders.php">Orders</a></li>
+					  </ol>
+					</nav>
 					<h3 class="text-center">Item List</h3>
 					  
 					<table class="table table-striped">
@@ -92,8 +99,8 @@
 			<p class="validation"></p>
 			
 			<p id="item_add_msg"></p>
-			<input id="btn_item_add" class='btn btn-dark form-control mb-2' type='button' value='SUBMIT' >
-			<input class='btn btn-warning' type='reset' value='clear'>
+			<input id="btn_item_add" class='btn btn-dark form-control mb-2' type='button' value='Add Item' >
+			<input class='btn btn-warning' type='reset' value='Clear'>
         </form>      
     </div>
   </div>

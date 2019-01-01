@@ -17,7 +17,7 @@
        					<label>Password</label>
        					<input type="password" class="form-control" name="admin_pw">
        				</div>
-       				<input type="submit" class="btn btn-outline-primary" value="LOG-IN">
+       				<input type="submit" class="btn btn-outline-dark" value="LOG-IN">
        			</form>       			
      		</div>   		
      	</div>

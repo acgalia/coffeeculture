@@ -46,32 +46,6 @@
   </div>
 </nav> 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-        <!-- form for login -->
-        <form method="post" action="">
-          <div class="modal-body">           
-            <input type="text" id="email_login" placeholder="Email">
-            <input type="password" id="password_login" placeholder="Password">
-            <p id="login_msg"></p>           
-          </div>
-          <div class="modal-footer">
-            <div><a href="register.php">Not yet registered?</a></div>
-            <input id="login" type="button" class="btn btn-secondary" value="Enter">
-          </div>
-        </form>      
-    </div>
-  </div>
-</div>
-
 <script type="text/javascript">
   
 

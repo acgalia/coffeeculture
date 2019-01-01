@@ -1,9 +1,6 @@
-
-
-<?php include "authenticate.php";?>
-
 <?php
-     		
+    include "authenticate.php";
+
 	$admin_un = $_POST['admin_un'];
 	$admin_pw = $_POST['admin_pw'];
 
@@ -15,6 +12,6 @@
 		header("Location: ../views/items.php");
 	}
 	else{
-		echo "Wrong Credentials!";
+		header("Location: ../views/items.php");
 	}
 ?>
