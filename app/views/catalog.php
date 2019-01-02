@@ -4,9 +4,9 @@
 
 <!-- button categories  -->
 <div class='container mt-5 bg-dark'>
-  <div class="row">
-    <div class="col-lg-3"></div>
-    <div class="col-lg-9">
+  <!-- BUTTON CATEGORIES NOT COMMENT OUT FOR NOW -->
+<!--   <div class="row">
+    <div class="col-lg-12">
       
     
       <?php 
@@ -20,7 +20,7 @@
 
    
                                      
-                  <button type='button' class='btn btn-lg btn-secondary' onclick='showCategories($row[id])'>$row[name]</button>
+                  <button type='button' class='w-25 btn btn-lg btn-secondary' onclick='showCategories($row[id])'>$row[c_name]</button>
                                     
                 ";
               }
@@ -28,18 +28,19 @@
           ?>
       </div>
     
-  </div>
+  </div> -->
+
   
   <div class="row my-4 py-4">
     <div class="col-lg-9"></div>
     <div class="col-lg-3">
     <div class='btn-group'>
-      <button class='btn btn-secondary btn-sm dropdown-toggle bg-dark' type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>Sort By
+      <button class='btn btn-secondary btn-sm dropdown-toggle bg-dark' type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>Categories
       </button> 
       <div class='dropdown-menu bg-dark'>
-      <a class='dropdown-item' href='#'>All</a>
+<!--       <a class='dropdown-item' href='#'>All</a>
       <a class='dropdown-item' href='#'>New Items</a>
-          <div class="dropdown-divider"></div>         
+          <div class="dropdown-divider"></div>  -->        
           <?php 
             require "../controllers/connect.php";
             $sql = "SELECT * FROM categories";
@@ -48,18 +49,12 @@
             if(mysqli_num_rows($result) > 0){
               while($row = mysqli_fetch_assoc($result)){
                 echo"                                  
-                  <a href='#' class='dropdown-item' onclick='showCategories($row[id])'>$row[name]</a>                 
+                  <a href='#' class='dropdown-item' onclick='showCategories($row[id])'>$row[c_name]</a>                 
                 ";
               }
             }
           ?>
-          <!-- <a class='dropdown-item' href='#'>New Items</a>
-          <div class="dropdown-divider"></div>
-          <a class='dropdown-item' href='#'>Mill Grinder</a>
-          <a class='dropdown-item' href='#'>Pot</a>
-          <a class='dropdown-item' href='#'>Dripper</a>
-          <a class='dropdown-item' href='#'>Filter</a>
-          <a class='dropdown-item' href='#'>Bean Packages</a> -->
+
 
         
         </div> <!-- end dropdown menu -->       
@@ -118,9 +113,8 @@
                   </div>               
                 <div class='card-footer'>
                   <div class='row'>
-                    <h6 class='col-sm-9'>₱ $row[price]</h6>              
-                    <input class='mb-2 col-sm-3' type='number' min='1' value='1' id='quantity$row[id]'>             
-                    <button class='btn btn-block btn-secondary'><i class='far fa-heart'></i> Add to wishlist</button>
+                    <h6 class='col-sm-12 text-right'>₱ $row[price]</h6>              
+                    <input class='mb-2 col-sm-12' type='number' min='1' value='1' id='quantity$row[id]'>             
                     <button class='btn btn-block btn-secondary' id='addToCart' data-id='$row[id]'><i class='fas fa-cart-plus'></i> Add to cart</button>
                   </div>
                 </div>

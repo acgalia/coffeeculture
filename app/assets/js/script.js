@@ -36,9 +36,16 @@
       $.post("../controllers/con_login.php", {
       email_login:email_login, password_login:password_login},
       function(data){
-      $("#login_msg").css("color", "green");
-      $("#login_msg").html(data);
-      document.location = 'cart.php'; 
+        if(data == "Maybe it's me, not you?"){
+          $("#login_msg").css("color", "red");
+          $("#login_msg").html(data);
+          //document.location = 'index.php'; 
+        }else{
+          $("#login_msg").css("color", "green");
+          $("#login_msg").html(data);
+          document.location = 'cart.php'; 
+        }
+      
       })
       
       

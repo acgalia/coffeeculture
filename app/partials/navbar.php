@@ -85,7 +85,7 @@
           </div>
           <div class="modal-footer">
             <div><a href="register.php">Not yet registered?</a></div>
-            <input id="login" type="button" class="btn btn-secondary" value="Enter">
+            <input id="login" type="button" class="btn btn-dark w-25" value="Enter">
           </div>
         </form>      
     </div>

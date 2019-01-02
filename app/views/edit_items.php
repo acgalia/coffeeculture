@@ -39,24 +39,105 @@
    												<div class='form-group'>
  												<label>Image Path</label>
    												<input type='text' value='$row[img_path]' class='form-control' name='img_path'>
-   												</div>
+   												</div>";
 
-   												<div class='form-group'>
- 												<label>Category Id</label>
- 												<select class='custom-select' name='category_id'>
-											        <option value='1'>Mill Grinder (1)</option>
-											        <option value='2'>Pot (2)</option>
-											        <option value='3'>Dripper (3)</option>
-											        <option value='4'>Filter (4)</option>
-											        <option value='5'>Coffee Beans (5)</option>
-											     </select>
+   												if ($row[category_id] == 1){
+   													echo "
+
+   														<div class='form-group'>
+			 												<label>Category Id</label>
+			 												<select class='custom-select' name='category_id'>
+														        <option selected value='1'>Mill Grinder</option>
+														        <option value='2'>Pot</option>
+														        <option value='3'>Dripper</option>
+														        <option value='4'>Filter</option>
+														        <option value='5'>Coffee Beans</option>
+														     </select>
+			   												
+			   												</div>
+
+			   												<input class='btn btn-dark' type='submit' value='Save'>
+			   												<input class='btn btn-dark' type='reset' value='Clear'>
+			   												<a href='items.php'><input class='btn btn-dark' type='button' value='Cancel'></a>
+													";
+   												}else if($row[category_id] == 2){
+   													echo "
+
+   														<div class='form-group'>
+			 												<label>Category Id</label>
+			 												<select class='custom-select' name='category_id'>
+														        <option value='1'>Mill Grinder</option>
+														        <option selected value='2'>Pot</option>
+														        <option value='3'>Dripper</option>
+														        <option value='4'>Filter</option>
+														        <option value='5'>Coffee Beans</option>
+														     </select>
+			   												
+			   												</div>
+
+			   												<input class='btn btn-dark' type='submit' value='Save'>
+			   												<input class='btn btn-dark' type='reset' value='Clear'>
+			   												<a href='items.php'><input class='btn btn-dark' type='button' value='Cancel'></a>
+													";
+   												}else if($row[category_id] == 3){
+   													echo "
+
+   														<div class='form-group'>
+			 												<label>Category Id</label>
+			 												<select class='custom-select' name='category_id'>
+														        <option value='1'>Mill Grinder</option>
+														        <option value='2'>Pot</option>
+														        <option selected value='3'>Dripper</option>
+														        <option value='4'>Filter</option>
+														        <option value='5'>Coffee Beans</option>
+														     </select>
+			   												
+			   												</div>
+
+			   												<input class='btn btn-dark' type='submit' value='Save'>
+			   												<input class='btn btn-dark' type='reset' value='Clear'>
+			   												<a href='items.php'><input class='btn btn-dark' type='button' value='Cancel'></a>
+													";
+   												}else if($row[category_id] == 4){
+   													echo "
+
+   														<div class='form-group'>
+			 												<label>Category Id</label>
+			 												<select class='custom-select' name='category_id'>
+														        <option value='1'>Mill Grinder</option>
+														        <option value='2'>Pot</option>
+														        <option value='3'>Dripper</option>
+														        <option selected value='4'>Filter</option>
+														        <option value='5'>Coffee Beans</option>
+														     </select>
+			   												
+			   												</div>
+
+			   												<input class='btn btn-dark' type='submit' value='Save'>
+			   												<input class='btn btn-dark' type='reset' value='Clear'>
+			   												<a href='items.php'><input class='btn btn-dark' type='button' value='Cancel'></a>
+													";
+   												}else{
+   													echo "
+
+   														<div class='form-group'>
+			 												<label>Category Id</label>
+			 												<select class='custom-select' name='category_id'>
+														        <option value='1'>Mill Grinder</option>
+														        <option value='2'>Pot</option>
+														        <option value='3'>Dripper</option>
+														        <option value='4'>Filter</option>
+														        <option selected value='5'>Coffee Beans</option>
+														     </select>
+			   												
+			   												</div>
+
+			   												<input class='btn btn-dark' type='submit' value='Save'>
+			   												<input class='btn btn-dark' type='reset' value='Clear'>
+			   												<a href='items.php'><input class='btn btn-dark' type='button' value='Cancel'></a>
+													";
+   												}
    												
-   												</div>
-
-   												<input class='btn btn-dark' type='submit' value='Save'>
-   												<input class='btn btn-dark' type='reset' value='Clear'>
-   												<a href='items.php'><input class='btn btn-dark' type='button' value='Cancel'></a>
-											";
 										}
 									}
 							?>

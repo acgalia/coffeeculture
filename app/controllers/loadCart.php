@@ -33,7 +33,7 @@ foreach($_SESSION['cart'] as $id=> $quantity) {
 
                        //For computing the sub total and grand total
                        $subTotal = $quantity * $price;
-                       //$_SESSION["subTotal"] = $subTotal;
+                       $_SESSION["subTotal"] = $subTotal;
                        $grand_total += $subTotal;
                        $_SESSION["grand_total"] = $grand_total;
 

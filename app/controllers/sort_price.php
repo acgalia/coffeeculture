@@ -18,9 +18,8 @@
 				                </div>
 				                <div class='card-footer'>
 				                  <div class='row'>
-				                    <h6 class='col-sm-9'>₱ $row[price]</h6>              
-				                    <input class='mb-2 col-sm-3' type='number' min='1' value='1' id='quantity$row[id]'>            
-				                    <button class='btn btn-block btn-secondary'><i class='far fa-heart'></i> Add to wishlist</button>
+				                    <h6 class='col-sm-12 text-right'>₱ $row[price]</h6>              
+				                    <input class='mb-2 col-sm-12' type='number' min='1' value='1' id='quantity$row[id]'>             
 				                    <button class='btn btn-block btn-secondary' id='addToCart' data-id='$row[id]'><i class='fas fa-cart-plus'></i> Add to cart</button>
 				                  </div>
 				                </div>

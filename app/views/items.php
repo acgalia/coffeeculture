@@ -18,18 +18,18 @@
 					<table class="table table-striped">
 						<thead>
 							<tr>
-								<th>ID</th>
+								<th>Item ID</th>
 								<th>Name</th>
 								<th>Price</th>
 								<th>Description</th>
 								<th>Image Path</th>
-								<th>Category ID</th>
+								<th>Category</th>
 								<th colspan="2">Actions</th>
 							</tr>
 						<tbody>
 							<?php
 								require "../controllers/connect.php";
-								$sql = "SELECT * FROM items ORDER BY category_id";
+								$sql = "SELECT items.id, items.name, items.price, items.description, items.img_path, categories.c_name FROM items JOIN categories ON items.category_id = categories.id ORDER BY items.category_id";
 								$result = mysqli_query($conn,$sql);
 							
 									if (mysqli_num_rows($result) > 0){ ?>
@@ -41,7 +41,7 @@
 													<td><?= $row['price']?></td>
 													<td><?= $row['description']?></td>
 													<td><?= $row['img_path']?></td>
-													<td><?= $row['category_id']?></td>
+													<td><?= $row['c_name']?></td>
 													<td><a href="edit_items.php?id=<?= $row['id'] ?>">Edit</a></td>
 													<td><a onclick="return confirm('Delete?')" href="../controllers/delete_item.php?id=<?= $row['id'] ?>">Delete</a></td>
 												</tr>
