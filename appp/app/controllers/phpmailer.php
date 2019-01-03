@@ -12,6 +12,8 @@ require_once $parent. "../../vendor/autoload.php";
 
 $mail = new PHPMailer(true);
 
+// $mail = new PHPMailer\PHPMailer\PHPMailer(true);
+
 $staff_email = "aaron.carmelo.galia@gmail.com"; // where the email is coming from
 $users_email =  $_SESSION['email'];//Where the email will go
 $email_subject = "CSP2 Order Confirmation";

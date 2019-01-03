@@ -74,9 +74,9 @@ $transaction ->setAmount($amount)
 $redirectUrls = new RedirectUrls();
 $redirectUrls
 	//Create successful file
-	->setReturnUrl('https://localhost/csp2-ecommerce/app/controllers/ppmailer.php')
+	->setReturnUrl('https://localhost/csp2-ecommerce/appp/app/controllers/ppmailer.php')
 	//Create unsuccessful file
-	->setCancelUrl('https://localhost/csp2-ecommerce/app/views/checkout.php');
+	->setCancelUrl('https://localhost/csp2-ecommerce/appp//app/views/checkout.php');
 
 $payment = new Payment();
 $payment ->setIntent("sale")
