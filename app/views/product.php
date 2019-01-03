@@ -3,7 +3,7 @@
 include "../partials/header.php";	
 include "../partials/navbar.php";
 
-include '../controllers/connect.php';
+require_once '../controllers/connect.php';
 
 	$name = $_GET['name'];
 
@@ -26,7 +26,7 @@ include '../controllers/connect.php';
 					<div class='card-header bg-dark text-light'><h6>$row[name]</div>
 					<h6 class='col-sm-9'>$row[description]</h6>
 					<h6 class='col-sm-12 text-right'>₱ $row[price]</h6>
-					<input class='mb-2 col-sm-12' type='number' min='1' value='1' id='quantity$row[id]'>    
+					<input class='mb-2 col-sm-12' type='number' min='1' value='1' id='quantity$row[id]' oninput='this.value = Math.abs(this.value)'>    
 		            <button class='btn btn-block btn-secondary mb-3' id='addToCart' data-id='$row[id]'><i class='fas fa-cart-plus'></i> Add to cart</button>
 		            <a class='cont_shop' href='catalog.php'><i class='fas fa-undo-alt'></i> Continue Shopping</a> 
 				</div>

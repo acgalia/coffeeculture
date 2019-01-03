@@ -40,7 +40,7 @@ $_SESSION["price"] = $price;
 	           <tbody>
 		<?php 
 
-		require "../controllers/connect.php"; 	         
+		require_once "../controllers/connect.php"; 	         
 		$data = "";
 		$grand_total = 0;
 		foreach($_SESSION['cart'] as $item_id=> $quantity) {

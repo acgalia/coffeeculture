@@ -27,7 +27,7 @@
 							</tr>
 						<tbody>
 							<?php
-								require "../controllers/connect.php";
+								require_once "../controllers/connect.php";
 								$sql = "SELECT orders.id, orders.transaction_code, orders.purchase_date, users.lastname, users.firstname, status.name FROM ((orders INNER JOIN users ON orders.user_id = users.id) INNER JOIN status ON orders.status_id = status.id) ORDER BY orders.purchase_date DESC";
 								$result = mysqli_query($conn,$sql);
 								

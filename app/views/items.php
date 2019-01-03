@@ -28,7 +28,7 @@
 							</tr>
 						<tbody>
 							<?php
-								require "../controllers/connect.php";
+								require_once "../controllers/connect.php";
 								$sql = "SELECT items.id, items.name, items.price, items.description, items.img_path, categories.c_name FROM items JOIN categories ON items.category_id = categories.id ORDER BY items.category_id";
 								$result = mysqli_query($conn,$sql);
 							

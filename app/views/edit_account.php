@@ -10,7 +10,7 @@
 				<div class="card-body">
 					<form action="../controllers/con_edit_account.php" method="POST">
 						<?php 
-							require "../controllers/connect.php";
+							require_once "../controllers/connect.php";
 							$id = $_GET['id'];
 							$sql = "SELECT * FROM users WHERE id = $id";
 							$result = mysqli_query($conn,$sql);

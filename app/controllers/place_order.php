@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include 'connect.php';
+require_once 'connect.php';
 
 //fetch data
 $user_id = $_SESSION['user_id'];

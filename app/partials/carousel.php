@@ -5,10 +5,10 @@
            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100 img-fluid" src="../assets/images/adults.png" alt="Cups">
+                <img class="d-block w-100 img-fluid" src="../assets/images/adults.png" alt="couple">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="../assets/images/mix.png" alt="Third slide">
+                <img class="d-block w-100 img-fluid" src="../assets/images/equipment.png" alt="equipment">
               </div>
             </div>
               <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">

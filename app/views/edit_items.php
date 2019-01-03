@@ -11,7 +11,7 @@
 					<div class="card-body">
 						<form action="../controllers/con_item_update.php" method="POST">
 							<?php 
-								require "../controllers/connect.php";
+								require_once "../controllers/connect.php";
 								$id = $_GET['id'];
 								$sql = "SELECT * FROM items WHERE id = $id";
 								$result = mysqli_query($conn,$sql);

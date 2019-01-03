@@ -6,7 +6,7 @@
 <h1 class="text-center">Featured Items</h1>
  <div class="row">
     <?php 
-      require "../controllers/connect.php";
+      require_once "../controllers/connect.php";
       $sql = "SELECT * FROM items LIMIT 4";
       $result = mysqli_query($conn,$sql);
 
@@ -22,7 +22,7 @@
                 <div class='card-footer'>
                   <div class='row'>
                     <h6 class='col-sm-12 text-right'>₱ $row[price]</h6>              
-                    <input class='mb-2 col-sm-12' type='number' min='1' value='1' id='quantity$row[id]'>             
+                    <input class='mb-2 col-sm-12' type='number' min='1' value='1' id='quantity$row[id]' oninput='this.value = Math.abs(this.value)'>             
                     <button class='btn btn-block btn-secondary' id='addToCart' data-id='$row[id]'><i class='fas fa-cart-plus'></i> Add to cart</button>
                   </div>
                 </div>
