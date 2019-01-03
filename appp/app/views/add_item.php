@@ -2,7 +2,7 @@
 include "../partials/header.php";	
 include "../partials/navbar.php";
 
-require_once '../controllers/connect.php';
+include '../controllers/connect.php';
 ?>
 <div class="container">
 	<div class="row">

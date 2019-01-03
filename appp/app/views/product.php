@@ -3,7 +3,7 @@
 include "../partials/header.php";	
 include "../partials/navbar.php";
 
-require_once '../controllers/connect.php';
+include '../controllers/connect.php';
 
 	$name = $_GET['name'];
 

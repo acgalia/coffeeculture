@@ -2,7 +2,7 @@
 session_start();
 
 //Database Info
-require_once 'connect.php';
+include 'connect.php';
 
 require "../../vendor/autoload.php";
 use PayPal\Rest\ApiContext;

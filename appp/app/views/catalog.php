@@ -10,7 +10,7 @@
       
     
       <?php 
-            require_once "../controllers/connect.php";
+            require "../controllers/connect.php";
             $sql = "SELECT * FROM categories";
             $result = mysqli_query($conn,$sql);
 

@@ -1,11 +1,10 @@
 <?php
-	// local host php connection
+
 	$host = "localhost";
 	$db_username = "root";
 	$db_password = "";
 	$db_name = 'coffeeculture';
 
-	//db4free.net connection
 	// $host = "db4free.net";
 	// $db_username = "aarongalia";
 	// $db_password = "coffeevulture";

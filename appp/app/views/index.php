@@ -6,7 +6,7 @@
 <h1 class="text-center">Featured Items</h1>
  <div class="row">
     <?php 
-      require_once "../controllers/connect.php";
+      require "../controllers/connect.php";
       $sql = "SELECT * FROM items LIMIT 4";
       $result = mysqli_query($conn,$sql);
 

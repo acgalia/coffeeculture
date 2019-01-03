@@ -2,7 +2,7 @@
 <?php error_reporting(0);?> 
 <h1>My Cart</h1>
 
-<?php require_once 'connect.php'; ?>
+<?php include 'connect.php'; ?>
 <?php
 
 $data ='

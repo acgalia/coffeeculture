@@ -11,7 +11,7 @@
 					<div class="card-body">
 						<form action="../controllers/con_edit_status.php" method="POST">
 							<?php 
-								require_once "../controllers/connect.php";
+								require "../controllers/connect.php";
 								$id = $_GET['id'];
 								$sql = "SELECT orders.id, orders.transaction_code, status.name FROM orders JOIN status ON orders.status_id = status.id WHERE orders.id = $id";
 								$result = mysqli_query($conn,$sql);
