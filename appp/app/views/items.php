@@ -19,10 +19,10 @@
 						<thead>
 							<tr>
 								<th>Item ID</th>
+								<th>Image</th>
 								<th>Name</th>
 								<th>Price</th>
 								<th>Description</th>
-								<th>Image Path</th>
 								<th>Category</th>
 								<th colspan="2">Actions</th>
 							</tr>
@@ -37,10 +37,10 @@
 										
 												<tr>
 													<td><?= $row['id']?></td>
+													<td><img class="img-fluid" src="<?= $row['img_path']?>"></td>
 													<td><?= $row['name']?></td>
 													<td><?= $row['price']?></td>
 													<td><?= $row['description']?></td>
-													<td><?= $row['img_path']?></td>
 													<td><?= $row['c_name']?></td>
 													<td><a href="edit_items.php?id=<?= $row['id'] ?>">Edit</a></td>
 													<td><a onclick="return confirm('Delete?')" href="../controllers/delete_item.php?id=<?= $row['id'] ?>">Delete</a></td>

@@ -1,10 +1,16 @@
 <?php
 //phpmailer
-require "../../vendor/phpmailer/phpmailer/src/PHPMailer.php";
-require "../../vendor/phpmailer/phpmailer/src/Exception.php";
-require "../../vendor/autoload.php"; 
+// require "../../vendor/phpmailer/phpmailer/src/PHPMailer.php";
+// require "../../vendor/phpmailer/phpmailer/src/Exception.php";
+// require "../../vendor/autoload.php"; 
 
-$mail = new PHPMailer\PHPMailer\PHPMailer(true);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+$parent = dirname(__FILE__,2);
+require_once $parent. "../../vendor/autoload.php"; 
+
+$mail = new PHPMailer(true);
 
 $staff_email = "aaron.carmelo.galia@gmail.com"; // where the email is coming from
 $users_email =  $_SESSION['email'];//Where the email will go
