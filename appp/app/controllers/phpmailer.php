@@ -29,7 +29,7 @@ try{
 	$mail->Host = "smtp.gmail.com";
 	$mail->SMTPAuth = true;
 	$mail->Username = $staff_email;
-	$mail->Password = "carm3lotot";
+	$mail->Password = "!carm3lotot";
 	$mail->SMTPSecure = "tls";
 	$mail->Port = 587;
 	$mail->setFrom($staff_email,"Coffee Culture");
