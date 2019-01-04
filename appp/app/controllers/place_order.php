@@ -26,7 +26,7 @@ $purchase_date = date('m/d/Y h:i:s a', time());
 $_SESSION["purchase_date"] = $purchase_date;
 
 if($payment_mode_id == 2){
-	//require_once 'connect.php';
+	require_once 'connect.php';
 	include '../../paypal.php';
 
 	// //to insert items in the orders table

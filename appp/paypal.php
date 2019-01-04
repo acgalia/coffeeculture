@@ -4,10 +4,15 @@ $ship_address = $_POST['ship_address'];
 $transaction_code = $_SESSION["transaction_code"];
 
 //Database Info
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "coffeeculture";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "coffeeculture";
+
+$host = "db4free.net";
+$db_username = "aarongalia";
+$db_password = "coffeevulture";
+$db_name = 'coffeeculture';
 
 //Create connection to database
 $conn = mysqli_connect($servername, $username, $password, $dbname);
