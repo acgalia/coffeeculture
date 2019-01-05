@@ -11,34 +11,13 @@ $result = mysqli_query($conn, $sql);
 if(mysqli_num_rows($result) > 0){
 	while($row = mysqli_fetch_assoc($result)){
 		$data.="
-				<div class='card text-center mb-5'>
-						 	<div class='card-header bg-dark text-light'>
-						    	Transaction Number:  $row[transaction_code]
-						  	</div>
-						  	<div class='card-body'>
-						  		<div>
-						  		<small>Date and Time Purchased</small>			    	
-						    	<p class='card-text'><strong>$row[purchase_date]</strong></h5>
-						    	</div>
-						    	<table class='table'>
-									<thead class='bg-dark text-light'>
-										<tr>
-											<th><small>Item</small></th>
-											<th><small>Price</small></th>
-											<th><small>Quantity</small></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>$row[name]</td>
-											<td>$row[price]</td>
-											<td>$row[quantity]</td>
-										</tr>
-									</tbody>
-								</table>
-
-						  	</div>
-						</div>
+			<tr>
+				<td>$row[transaction_code]</td>
+				<td>$row[purchase_date]</td>
+				<td>$row[name]</td>
+				<td>$row[price]</td>
+				<td>$row[quantity]</td>
+			</tr>						
 
 			  ";
 	}

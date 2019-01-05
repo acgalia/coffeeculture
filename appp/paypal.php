@@ -4,24 +4,25 @@ $ship_address = $_POST['ship_address'];
 $transaction_code = $_SESSION["transaction_code"];
 
 //Database Info
+require_once 'app/controllers/connect.php';
 // $servername = "localhost";
 // $username = "root";
 // $password = "";
 // $dbname = "coffeeculture";
 
-$host = "db4free.net";
-$db_username = "aarongalia";
-$db_password = "coffeevulture";
-$db_name = 'coffeeculture';
+// $host = "db4free.net";
+// $db_username = "aarongalia";
+// $db_password = "coffeevulture";
+// $db_name = 'coffeeculture';
 
 //Create connection to database
 // $conn = mysqli_connect($servername, $username, $password, $dbname);
-$conn = mysqli_connect($host, $db_username, $db_password, $db_name);
+// $conn = mysqli_connect($host, $db_username, $db_password, $db_name);
 
 //Check connection
-if (!$conn) {
-	die("Connection failed: "  . mysqli_connect_error());
-} 
+// if (!$conn) {
+// 	die("Connection failed: "  . mysqli_connect_error());
+// } 
 
 require "vendor/autoload.php";
 use PayPal\Rest\ApiContext;

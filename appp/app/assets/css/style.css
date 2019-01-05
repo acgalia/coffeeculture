@@ -4,6 +4,9 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
  */
 
+*{
+  font-family: 'Thasadith', sans-serif;
+}
 
 body {
   padding-top: 54px;
@@ -20,12 +23,12 @@ body {
 }
 
 .navbar {
-	margin-bottom: 3%;
+	color: white;
 }
 
 a.sort,
 a.dropdown-item {
-	color: #ffbc5f;
+	color: #c58b3c; /*medyo light orange*/
 }
 
 a.cont_shop {
@@ -38,23 +41,46 @@ a.cont_shop {
   color: white;
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
-}
 
 .card {
   height: 100%;
 }
 
 .fab, .fas {
-  color:#ffbc5f;
+  color:#ffbc5f; /*light orange*/
+  /*color:#c58b3c;*/ /*medyo light orange*/
   font-size: 1.5em;
 }
 
-.account {
+/*.account {
   background-color: #ffbc5f;
+}
+*/
+.container {
+/*  height: 70vh;*/
+}
+
+.wallpaper {
+  background-image: url("../images/beans.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.opacity {
+  opacity: 0.9;
+  background-color: ;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
 }
 
 /*!

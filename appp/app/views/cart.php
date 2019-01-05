@@ -16,9 +16,11 @@
 				<div class='row'>
 					<div class='col-lg-1'></div>
 					<div class='col-lg-10 text-center'>
-						Your Cart is empty, boy. There, there.
-					<a href='catalog.php'><input type='button' value='Shop Now' class='btn btn-dark'></a>
+						<p class='mb-3'>Your Cart is empty. There, there.</p>
+						<div><a href='catalog.php'><input type='button' value='Shop Now' class='btn btn-dark'></a></div>
 					</div>
+					
+					
 				</div>
 			</div>
 		";

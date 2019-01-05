@@ -1,7 +1,8 @@
 <?php include "../partials/header.php";?>
 <?php include "../partials/navbar.php";?>
 
-<div class="container">
+<div class="container-fluid wallpaper py-5">
+<div class="container opacity">
 	<div class="row">
 		<div class="col-lg-2"><h4 class="text-center">My Account</h4>
 			
@@ -55,6 +56,7 @@
 
 		</div>
 	</div>
+</div>
 </div>
 
 <?php include "../partials/footer.php";?>

@@ -3,6 +3,7 @@
 
 
 <!-- button categories  -->
+<div class="container-fluid">
 <div class='container mt-5 bg-dark'>
   <!-- BUTTON CATEGORIES NOT COMMENT OUT FOR NOW -->
 <!--   <div class="row">
@@ -126,6 +127,7 @@
     ?>
   </div>  
 </div> <!-- end container -->
+</div>
 
    <!-- Footer -->
 <?php include "../partials/footer.php" ;?>
