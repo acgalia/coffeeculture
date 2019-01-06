@@ -4,7 +4,7 @@
 <div class="container-fluid wallpaper py-5">
 <div class="container opacity">
 	<div class="row">
-		<div class="col-lg-2"><h4 class="text-center">My Account</h4>
+		
 			
 		<?php
 			$user_id = $_SESSION['user_id'];
@@ -14,7 +14,10 @@
 			$result = mysqli_query($conn,$sql);
 			 if(mysqli_num_rows($result) > 0){ ?>
 				<?php while($row = mysqli_fetch_assoc($result)){ ?>
-					<a href="edit_account.php?id=<?= $row['id'] ?>"><button class='btn btn-success btn-dark'>Edit Info</button></a>
+					<div class="col-lg-2 col-md-12 col-sm-12 text-center mb-3">
+						<h4>My Account</h4>
+						<a href="edit_account.php?id=<?= $row['id'] ?>"><button class='btn btn-success btn-dark'>Edit Info</button></a>
+					
 		<?php }	?>
 		<?php } ?>
 
@@ -49,7 +52,7 @@
 					";
 			}else{
 				echo "
-					Hey mate, we don't know you yet. Please Register/Login.
+					<div class='col-lg-12'>Hey mate, we don't know you yet. Please Register/Login.</div>
 				";
 			}
 			?>

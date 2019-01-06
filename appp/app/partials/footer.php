@@ -1,6 +1,6 @@
 
   <!-- Footer -->
-    <footer class="bg-dark text-light mt-4">
+    <footer class="bg-dark text-light">
     <div class="container p-3">
       <div class="row">
         <div class="col-lg-4">

@@ -28,7 +28,7 @@
 				</div>
 				</div>
 			</div>
-			<a href="index.php" class="btn btn-dark my-5">Back to Home</a>
+			<div class="col-lg-2 col-md-12 col-sm-12 text-center"><a href="index.php" class="btn btn-dark my-5">Back to Home</a></div>
 		</div>
 	</div>
 </div>
