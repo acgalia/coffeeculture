@@ -81,9 +81,13 @@ $transaction ->setAmount($amount)
 $redirectUrls = new RedirectUrls();
 $redirectUrls
 	//Create successful file
-	->setReturnUrl('https://desolate-plateau-78914.herokuapp.com/app/views/confirmation.php')
+	->setReturnUrl('https://desolate-plateau-78914.herokuapp.com/app/controllers/ppmailer.php')
 	//Create unsuccessful file
 	->setCancelUrl('https://desolate-plateau-78914.herokuapp.com/app/views/checkout.php');
+	//Create successful file
+	// ->setReturnUrl('https://localhost/csp2-ecommerce/appp/app/controllers/ppmailer.php')
+	// //Create unsuccessful file
+	// ->setCancelUrl('https://localhost/csp2-ecommerce/appp//app/views/checkout.php');
 
 $payment = new Payment();
 $payment ->setIntent("sale")
