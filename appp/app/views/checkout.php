@@ -2,7 +2,7 @@
 <?php include "../partials/navbar.php";?>
 
 <?php
-$quantity = $_SESSION["quantity"];
+// $quantity = $_SESSION["quantity"];
 $_SESSION["price"] = $price;
 ?>
 
@@ -86,7 +86,7 @@ $_SESSION["price"] = $price;
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<div><strong><span>Your total fee is ₱ </span><?php echo number_format(($_SESSION["grand_total"]), 2)?></strong></div>
+				<div><strong><span>Your total is ₱ </span><?php echo number_format(($_SESSION["grand_total"]), 2)?></strong></div>
 				<input id='place_order_btn' type='submit' class='btn btn-dark mt-3' value='Place Order Now'><div>
 			</div>
 		</div>

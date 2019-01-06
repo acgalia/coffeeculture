@@ -10,21 +10,23 @@
 			while ($row = mysqli_fetch_assoc($result)){
 				$data .= "
 
-				<div class='col-md-3 mb-3'>
-              				<div class='card h-100 shadow-lg mb-5 bg-white rounded'>
-				                <div class='card-header bg-dark text-light'><h6><a href='../views/product.php?name=$row[name]'>$row[name]</a></div> 
-				                <div class='card-body p-5'>
-                  					<img class='card-img-top' src='$row[img_path]' alt='$row[name]'>           
-				                </div>
-				                <div class='card-footer'>
-				                  <div class='row'>
-				                    <h6 class='col-sm-12 text-right'>₱ $row[price]</h6>              
-				                    <input class='mb-2 col-sm-12' type='number' min='1' value='1' id='quantity$row[id]' oninput='this.value = Math.abs(this.value)'>             
-				                    <button class='btn btn-block btn-secondary' id='addToCart' data-id='$row[id]'><i class='fas fa-cart-plus'></i> Add to cart</button>
-				                  </div>
-				                </div>
-				            </div>
-				        </div>
+				<a style='text-decoration: none' href='../views/product.php?name=$row[name]'>
+	              <div class='col-md-3 mb-3'>
+	                <div class='card h-100 shadow-lg bg-white rounded'>
+	                  <div class='card-header bg-dark item_name text-center'><h6><span><strong>$row[name]</strong></span></h6></div>
+	                  <div class='card-body p-5'>
+	                    <img class='card-img-top' src='$row[img_path]' alt='$row[name]'>           
+	                  </div>
+	            </a>
+	                <div class='card-footer'>
+	                  <div class='row'>
+	                    <h6 class='col-sm-12 text-right'>₱ $row[price]</h6>              
+	                    <input class='mb-2 col-sm-12' type='number' min='1' value='1' id='quantity$row[id]' oninput='this.value = Math.abs(this.value)'>             
+	                    <button class='btn btn-block btn-secondary' id='addToCart' data-id='$row[id]'><i class='fas fa-cart-plus'></i> Add to cart</button>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
 
 				";
 			}

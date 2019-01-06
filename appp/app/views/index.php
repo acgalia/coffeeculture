@@ -13,12 +13,14 @@
       if(mysqli_num_rows($result) > 0){
         while($row = mysqli_fetch_assoc($result)){
           echo"
-            <div class='col-md-3 mb-3'>
-              <div class='card h-100 shadow-lg mb-5 bg-white rounded'>
-                <div class='card-header bg-dark text-light'><h6><a href='../views/product.php?name=$row[name]'><span class='item_name'>$row[name]</span></a></div> 
-                <div class='card-body p-5'>
-                  <img class='card-img-top' src='$row[img_path]' alt='$row[name]'>           
-                </div>
+            <a style='text-decoration: none' href='../views/product.php?name=$row[name]'>
+              <div class='col-md-3 mb-3'>
+                <div class='card h-100 shadow-lg bg-white rounded'>
+                  <div class='card-header bg-dark item_name text-center'><h6><span><strong>$row[name]</strong></span></h6></div>
+                  <div class='card-body p-5'>
+                    <img class='card-img-top' src='$row[img_path]' alt='$row[name]'>           
+                  </div>
+            </a>
                 <div class='card-footer'>
                   <div class='row'>
                     <h6 class='col-sm-12 text-right'>₱ $row[price]</h6>              

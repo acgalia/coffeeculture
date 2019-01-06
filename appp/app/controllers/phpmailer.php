@@ -17,11 +17,14 @@ $mail = new PHPMailer(true);
 $staff_email = "aaron.carmelo.galia@gmail.com"; // where the email is coming from
 $users_email =  $_SESSION['email'];//Where the email will go
 $email_subject = "CSP2 Order Confirmation";
-$email_body = 	"
+$email_body = 	"	<h4>Dear $firstname, </h4>
 					<p>Your order has been processed at <strong>$purchase_date</strong> with a transaction code of <strong>$transaction_code.</strong>
 						Your items will be shipped at <strong>$ship_address.</strong><br>
 
-					Kindly contact us if there are any problems regarding your order. Have a nice day!</p> <br>
+					Kindly contact us if there are any problems regarding your order. Have a nice day!</p>
+
+					<h4>Your friendly neighbor, <br>
+					Coffee Culture</h4>
 				";
 
 try{

@@ -1,4 +1,5 @@
 <?php
+
 $grand_total = $_SESSION["grand_total"];
 $ship_address = $_POST['ship_address'];
 $transaction_code = $_SESSION["transaction_code"];
@@ -74,20 +75,20 @@ $amount ->setCurrency("PHP")
 $transaction = new Transaction();
 $transaction ->setAmount($amount)
 			 ->setItemList($itemlist)
-			 ->setDescription("$transaction_code")
+			 ->setDescription("Transaction Code: $transaction_code")
 			 ->setInvoiceNumber(uniqid("coffeeculture-"));
 
 //where to go after\
 $redirectUrls = new RedirectUrls();
 $redirectUrls
 	//Create successful file
-	->setReturnUrl('https://desolate-plateau-78914.herokuapp.com/app/controllers/ppmailer.php')
-	//Create unsuccessful file
-	->setCancelUrl('https://desolate-plateau-78914.herokuapp.com/app/views/checkout.php');
-	//Create successful file
-	// ->setReturnUrl('https://localhost/csp2-ecommerce/appp/app/controllers/ppmailer.php')
+	// ->setReturnUrl('https://desolate-plateau-78914.herokuapp.com/app/controllers/ppmailer.php')
 	// //Create unsuccessful file
-	// ->setCancelUrl('https://localhost/csp2-ecommerce/appp//app/views/checkout.php');
+	// ->setCancelUrl('https://desolate-plateau-78914.herokuapp.com/app/views/checkout.php');
+	//Create successful file
+	->setReturnUrl('https://localhost/csp2-ecommerce/appp/app/controllers/ppmailer.php')
+	//Create unsuccessful file
+	->setCancelUrl('https://localhost/csp2-ecommerce/appp//app/views/checkout.php');
 
 $payment = new Payment();
 $payment ->setIntent("sale")
