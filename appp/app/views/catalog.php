@@ -3,8 +3,8 @@
 
 
 <!-- button categories  -->
-<div class="container-fluid">
-<div class='container mt-5 bg-dark'>
+<div class="container-fluid wallpaper4">
+<div class='container'>
   <!-- BUTTON CATEGORIES NOT COMMENT OUT FOR NOW -->
 <!--   <div class="row">
     <div class="col-lg-12">

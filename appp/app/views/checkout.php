@@ -6,8 +6,8 @@
 $_SESSION["price"] = $price;
 ?>
 
-
-<div class="container">
+<div class="container-fluid wallpaper2 py-5">
+<div class="container opacity pt-3">
 	<h1 class="mb-5 text-center">Checkout</h1>	
 	<div class="row mb-5">
 	    <div class="col-lg-1"></div>
@@ -28,7 +28,7 @@ $_SESSION["price"] = $price;
 		</div>
 			
 	
-		<table class="table table-striped mt-3">
+		<table class="table table-hover mt-3">
            		<thead>
 	             <tr>
 	               <th scope="col">Item Name</th>
@@ -81,18 +81,20 @@ $_SESSION["price"] = $price;
 			</table>
 			<!-- <button type="button" class="btn btn-dark mt-3">Place Order Now</button> -->
 			 	
-	</div>
+</div>
 </div>
 	<div class="container">
 		<div class="row">
 			<div class="col">
 				<div><strong><span>Your total is ₱ </span><?php echo number_format(($_SESSION["grand_total"]), 2)?></strong></div>
-				<input id='place_order_btn' type='submit' class='btn btn-dark mt-3' value='Place Order Now'><div>
+				<input id='place_order_btn' type='submit' class='btn btn-dark mt-3' value='Place Order Now'>
 			</div>
 		</div>
 	</div>
 	</form>
+</div>
 
+</div>
    <!-- Footer -->
   
 		<?php //include "../partials/footer.php" ;?>

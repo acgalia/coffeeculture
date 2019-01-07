@@ -133,6 +133,41 @@ a.cont_shop {
   background-size: cover;
 }
 
+.wallpaper6 {
+  background-image: url("../images/emptycup.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wallpaper7 {
+  background-image: url("../images/beans2.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wallpaper8 {
+  background-image: url("../images/product.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .opacity {
   opacity: 0.9;
@@ -144,6 +179,10 @@ a.cont_shop {
 
 .opacity3 {
   background: rgba(169,169,169, 0.7);
+}
+
+.opacity4 {
+  background: rgba(205, 166, 115, 0.7);
 }
 
 @media (min-width: 992px) {

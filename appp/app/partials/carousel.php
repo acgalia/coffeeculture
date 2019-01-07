@@ -1,4 +1,4 @@
-<div class="container-fluid mb-5">
+<div class="container-fluid mb-1">
       <div class="row">
         <div class="col-lg-12">
            <!-- carousel -->

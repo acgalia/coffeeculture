@@ -34,7 +34,6 @@
               Hi ". $_SESSION['firstname'] ."
             </a>
             <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
-              <a class='dropdown-item' href='#'>Wishlist</a>
               <a class='dropdown-item' href='account.php'>My Account</a>
               <a class='dropdown-item' href='transaction.php'>Transaction History</a>
               <div class='dropdown-divider'></div>

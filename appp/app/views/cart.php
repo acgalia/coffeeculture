@@ -12,24 +12,27 @@
 
 
 <?php if($_SESSION['cart'] == ""){
-	echo "<div class='container'>
-				<div class='row'>
-					<div class='col-lg-1'></div>
-					<div class='col-lg-10 text-center'>
-						<p class='mb-3'>Your Cart is empty. There, there.</p>
-						<div><a href='catalog.php'><input type='button' value='Shop Now' class='btn btn-dark'></a></div>
+	echo "
+			<div class='container-fluid wallpaper6 py-3'>
+				<div class='container heightvh'>
+					<div class='row'>
+						<div class='col-lg-1'></div>
+						<div class='col-lg-10 text-center'>
+							<p class='mb-3'>Your cup is empty. There, there.</p>
+							<div><a href='catalog.php'><input type='button' value='Shop Now' class='btn btn-dark'></a></div>
+						</div>					
 					</div>
-					
-					
 				</div>
 			</div>
 		";
 }else{
 	echo "
-			<div class='container'>
-				<div class='row'>
-					<div class='col-lg-1'></div>
-					<div class='col-lg-10' id='loadCart'>
+			<div class='container-fluid wallpaper2 py-3'>
+				<div class='container'>
+					<div class='row'>
+						<div class='col-lg-1'></div>
+						<div class='col-lg-10 table-responsive w-auto' id='loadCart'>
+						</div>
 					</div>
 				</div>
 			</div>
