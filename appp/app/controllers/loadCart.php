@@ -39,7 +39,7 @@ foreach($_SESSION['cart'] as $id=> $quantity) {
 
                        $data .=
                          "<tr>
-                             <td><img src='$row[img_path]' width='25%' height='25%'></td>
+                             <td>$row[name]</td>
                              <td id='price$id'> $price</td>
                              <td><input type='number' class ='form-control' value = '$quantity' id='quantity$id' min='1' size='5' onchange=changeNoItems($id) oninput='this.value = Math.abs(this.value)'></td>
                              <td class='sub-total' id='subTotal$id'>". number_format ("$subTotal",2)  ."</td>

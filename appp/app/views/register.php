@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-lg-2"></div>
 			<div class="col-lg-8">
-				<div class="card opacity3">
+				<div class="card">
 					<div class="card-header bg-dark text-light">Register</div>
 					<div class="card-body">
 						<!-- <form action="../controllers/con_register.php" class="mb-3" method="POST" > -->
