@@ -64,6 +64,15 @@ a.cont_shop {
 /*  height: 70vh;*/
 }
 
+.heightvh {
+  height: 70vh;
+}
+
+.item_image {
+  width: 15%;
+  height: 15%;
+}
+
 .wallpaper {
   background-image: url("../images/beans.png");
 
@@ -112,6 +121,17 @@ a.cont_shop {
   background-size: cover;
 }
 
+.wallpaper5 {
+  background-image: url("../images/desk2.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 .opacity {

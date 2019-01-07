@@ -1,45 +1,49 @@
 <?php include "../partials/header.php";?>
 <?php include "../partials/navbar.php";?>
 
-<div class="container">
-	<div class="row">
-		<div class="col-lg-2"></div>
-		<div class="col-lg-8">
-			<div class="card">
-				<div class="card-header bg-dark text-light">Register</div>
-				<div class="card-body">
-					<!-- <form action="../controllers/con_register.php" class="mb-3" method="POST" > -->
-					<form action="" class="mb-3" id="form_register" method="post">
-						<label>Last Name</label>
-						<input type="text" class="form-control mb-3" id="last_name">
-						<p class="validation"></p>					
-					
-						<label>First Name</label>
-						<input type="text" class="form-control mb-3" id="first_name">
-						<p class="validation"></p>
-								
-						<label>Email</label>
-						<!-- <input type="email" class="form-control mb-3" id="email" placeholder="We'll never share your email with anyone else" data-validation="email"> -->
-						<input type="email" class="form-control mb-3" id="email" placeholder="We'll never share your email with anyone else">
-						<p class="validation"></p>
-
-						<label>Password</label>
-						<input type="password" class="form-control mb-3" id="password">
-						<p class="validation"></p>
-
-						<label>Confirm Password</label>
-						<input type="password" class="form-control mb-3" id="c_password">
-						<p class="validation"></p>
-
-						<label>Address</label>
-						<textarea type="text" class="form-control mb-3" id="address"></textarea>
-						<p class="validation"></p>
+<div class="container-fluid wallpaper5 py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8">
+				<div class="card opacity3">
+					<div class="card-header bg-dark text-light">Register</div>
+					<div class="card-body">
+						<!-- <form action="../controllers/con_register.php" class="mb-3" method="POST" > -->
+						<form action="" class="mb-3" id="form_register" method="post">
+							<strong><label>Last Name</label></strong>
+							<input type="text" class="form-control mb-3" id="last_name">
+							<p class="validation"></p>					
 						
-						<p id="register_msg"></p>
-						<input id="register_btn" class='btn btn-dark form-control mb-2' type='button' value='SUBMIT' >
-	   					<input class='btn btn-warning' type='reset' value='clear'>
-	   					
-   					</form>
+							<strong><label>First Name</label></strong>
+							<input type="text" class="form-control mb-3" id="first_name">
+							<p class="validation"></p>
+									
+							<strong><label>Email</label></strong>
+							<!-- <input type="email" class="form-control mb-3" id="email" placeholder="We'll never share your email with anyone else" data-validation="email"> -->
+							<input type="email" class="form-control mb-3" id="email" placeholder="We'll never share your email with anyone else">
+							<p class="validation"></p>
+
+							<strong><label>Password</label></strong>
+							<input type="password" class="form-control mb-3" id="password">
+							<p class="validation"></p>
+
+							<strong><label>Confirm Password</label></strong>
+							<input type="password" class="form-control mb-3" id="c_password">
+							<p class="validation"></p>
+
+							<strong><label>Address</label></strong>
+							<textarea type="text" class="form-control mb-3" id="address"></textarea>
+							<p class="validation"></p>
+							
+							<strong><p id="register_msg"></p></strong>
+							<div class="text-center">
+							<input id="register_btn" class='btn btn-dark w-25' type='button' value='Submit' >
+		   					<input class='btn btn-dark w-25' type='reset' value='Clear'>
+		   					</div>
+		   					
+	   					</form>
+					</div>
 				</div>
 			</div>
 		</div>

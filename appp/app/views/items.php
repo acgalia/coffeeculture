@@ -3,58 +3,68 @@
 <?php include "../controllers/authenticate.php";?>
 <!-- session_start(); -->
 <?php if(isset($_SESSION['admin'])){ ?>
+	<div class="container-fluid wallpaper3 py-5">
         <div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<!-- breadcrumb -->
-					<nav aria-label="breadcrumb">
-					  <ol class="breadcrumb">
-					    <li class="breadcrumb-item active" aria-current="page"><a href="items.php">Items</a></li>
-					    <li class="breadcrumb-item"><a href="orders.php">Orders</a></li>
-					  </ol>
-					</nav>
-					<h3 class="text-center">Item List</h3>
-					  
-					<table class="table table-striped">
-						<thead>
-							<tr>
-								<th>Item ID</th>
-								<th>Image</th>
-								<th>Name</th>
-								<th>Price</th>
-								<th>Description</th>
-								<th>Category</th>
-								<th colspan="2">Actions</th>
-							</tr>
-						<tbody>
-							<?php
-								require "../controllers/connect.php";
-								$sql = "SELECT items.id, items.name, items.price, items.description, items.img_path, categories.c_name FROM items JOIN categories ON items.category_id = categories.id ORDER BY items.category_id";
-								$result = mysqli_query($conn,$sql);
-							
-									if (mysqli_num_rows($result) > 0){ ?>
-										<?php while ($row = mysqli_fetch_assoc($result)){ ?>
-										
-												<tr>
-													<td><?= $row['id']?></td>
-													<td><img class="img-fluid" src="<?= $row['img_path']?>"></td>
-													<td><?= $row['name']?></td>
-													<td><?= $row['price']?></td>
-													<td><?= $row['description']?></td>
-													<td><?= $row['c_name']?></td>
-													<td><a href="edit_items.php?id=<?= $row['id'] ?>">Edit</a></td>
-													<td><a onclick="return confirm('Delete?')" href="../controllers/delete_item.php?id=<?= $row['id'] ?>">Delete</a></td>
-												</tr>
-								<?php		} ?>
-								<?php	} ?>
-							
-						</tbody>
-						</thead>
-					</table>
+				<div class="card opacity3">
+					<div class="col-lg-12 col-md-12 col-sm-12 table-responsive w-auto">
+						<!-- breadcrumb -->
+						<nav aria-label="breadcrumb">
+						  <ol class="breadcrumb bg-dark mt-3">
+						    <li class="breadcrumb-item active" aria-current="page"><a style='text-decoration: none' href="items.php">Items</a></li>
+						    <li class="breadcrumb-item"><a style='text-decoration: none' href="orders.php">Orders</a></li>
+						  </ol>
+						</nav>
+						<div class="row">
+							<div class="col-lg-4"></div>
+								<div class="col-lg-4 text-center">
+								<h3>Item List</h3>
+									<a class='nav-link text-light' href='' data-toggle='modal' data-target='#itemModal'><i class='fas fa-plus-circle'></i> Add Item</a>
+								</div>
+						</div>
+						  
+						<table class="table table-striped table-hover text-center">
+							<thead>
+								<tr>
+									<!-- <th>Item ID</th> -->
+									<th>Image</th>
+									<th>Name</th>
+									<th>Price</th>
+									<th>Description</th>
+									<th>Category</th>
+									<th colspan="2">Actions</th>
+								</tr>
+							<tbody>
+								<?php
+									require "../controllers/connect.php";
+									$sql = "SELECT items.id, items.name, items.price, items.description, items.img_path, categories.c_name FROM items JOIN categories ON items.category_id = categories.id ORDER BY items.category_id";
+									$result = mysqli_query($conn,$sql);
+								
+										if (mysqli_num_rows($result) > 0){ ?>
+											<?php while ($row = mysqli_fetch_assoc($result)){ ?>
+											
+													<tr>
+														<!-- <td><?= $row['id']?></td> -->
+														<td><img class="img-fluid item_image" src="<?= $row['img_path']?>"></td>
+														<td><?= $row['name']?></td>
+														<td><?= $row['price']?></td>
+														<td><?= $row['description']?></td>
+														<td><?= $row['c_name']?></td>
+														<td><a style='text-decoration: none' href="edit_items.php?id=<?= $row['id'] ?>">Edit</a></td>
+														<td><a style='text-decoration: none' onclick="return confirm('Delete?')" href="../controllers/delete_item.php?id=<?= $row['id'] ?>">Delete</a></td>
+													</tr>
+									<?php		} ?>
+									<?php	} ?>
+								
+							</tbody>
+							</thead>
+						</table>
+					</div>
 				</div>
 			</div>
 			
 		</div>
+	</div>
         <?php }else{
                header("Location: admin_login.php");
  } ?>

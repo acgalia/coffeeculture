@@ -2,11 +2,12 @@
 <?php include "../partials/adminNavbar.php";?>
 
 <?php if(isset($_SESSION['admin'])){ ?>
+<div class="container-fluid wallpaper3 py-5">
 <div class="container">
 	<div class="row">
 		<div class="col">
 			<h3>Edit Item</h3>
-			<div class="card">
+			<div class="card opacity3">
 				<div class="card-header">
 					<div class="card-body">
 						<form action="../controllers/con_item_update.php" method="POST">
@@ -147,6 +148,7 @@
 			</div>
 		</div>
 	</div>
+</div>
 </div>
 
         <?php }else{

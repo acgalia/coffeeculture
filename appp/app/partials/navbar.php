@@ -63,7 +63,7 @@
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form> -->
-  </div>
+  </div><!-- navbar collapse -->
 </nav> 
 
 <!-- Modal -->
@@ -84,7 +84,7 @@
             <p id="login_msg"></p>           
           </div>
           <div class="modal-footer">
-            <div><a href="register.php">Not yet registered?</a></div>
+            <div><a href="register.php" style='text-decoration: none'>Not yet registered?</a></div>
             <input id="login" type="button" class="btn btn-dark w-25" value="Enter">
           </div>
         </form>      

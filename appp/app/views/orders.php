@@ -10,9 +10,9 @@
 					<div class="col-lg-12 col-md-12 table-responsive w-auto">
 						<!-- breadcrumb -->
 						<nav aria-label="breadcrumb">
-						  <ol class="breadcrumb bg-dark">
-						    <li class="breadcrumb-item"><a href="items.php">Items</a></li>
-						    <li class="breadcrumb-item active" aria-current="page"><a href="orders.php">Orders</a></li>
+						  <ol class="breadcrumb bg-dark mt-3">
+						    <li class="breadcrumb-item"><a style='text-decoration: none' href="items.php">Items</a></li>
+						    <li class="breadcrumb-item active" aria-current="page"><a style='text-decoration: none' href="orders.php">Orders</a></li>
 						  </ol>
 						</nav>
 
@@ -41,7 +41,7 @@
 														<td><?= $row['purchase_date']?></td>
 														<td><?= $row['transaction_code']?></td>
 														<td><?= $row['name']?></td>
-														<td><a href="edit_status.php?id=<?= $row['id'] ?>">Edit</a></td>
+														<td><a style='text-decoration: none' href="edit_status.php?id=<?= $row['id'] ?>">Edit</a></td>
 													</tr>
 									<?php		} ?>
 									<?php	} ?>

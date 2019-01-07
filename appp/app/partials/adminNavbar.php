@@ -25,9 +25,6 @@
         if (isset($_SESSION['admin'])){
           echo "
           <li class='nav-item px-5'>
-            <a class='nav-link text-light' href='' data-toggle='modal' data-target='#itemModal'><i class='fas fa-plus-circle'></i> Add Item <span class='sr-only'>(current)</span></a>
-          </li>
-          <li class='nav-item px-5'>
             <a class='nav-link text-light' href='../controllers/logout.php'><i class='fas fa-sign-out-alt'></i> Logout</a>
           </li>
           ";
