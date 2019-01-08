@@ -5,52 +5,61 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-2"></div>
-			<div class="col-lg-8">
-				<div class="card">
-					<div class="card-header bg-dark text-light">Register</div>
-					<div class="card-body">
-						<!-- <form action="../controllers/con_register.php" class="mb-3" method="POST" > -->
-						<form action="" class="mb-3" id="form_register" method="post">
-							<strong><label>Last Name</label></strong>
-							<input type="text" class="form-control mb-3" id="last_name">
-							<p class="validation"></p>					
-						
-							<strong><label>First Name</label></strong>
-							<input type="text" class="form-control mb-3" id="first_name">
-							<p class="validation"></p>
-									
-							<strong><label>Email</label></strong>
-							<!-- <input type="email" class="form-control mb-3" id="email" placeholder="We'll never share your email with anyone else" data-validation="email"> -->
-							<input type="email" class="form-control mb-3" id="email" placeholder="We'll never share your email with anyone else">
-							<p class="validation"></p>
-
-							<strong><label>Password</label></strong>
-							<input type="password" class="form-control mb-3" id="password">
-							<p class="validation"></p>
-
-							<strong><label>Confirm Password</label></strong>
-							<input type="password" class="form-control mb-3" id="c_password">
-							<p class="validation"></p>
-
-							<strong><label>Address</label></strong>
-							<textarea type="text" class="form-control mb-3" id="address"></textarea>
-							<p class="validation"></p>
-							
-							<strong><p id="register_msg"></p></strong>
-							<div class="text-center">
-							<input id="register_btn" class='btn btn-dark w-25' type='button' value='Submit' >
-		   					<input class='btn btn-dark w-25' type='reset' value='Clear'>
-		   					</div>
-		   					
-	   					</form>
+			
+				<?php if(isset($_SESSION['email'])){ ?>
+					<div class="col-lg-8">
+					<h3>Error. 404 Forbidden. </h3> 	
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
+				<?php } else { ?>					
+					<div class="col-lg-8">
+					<div class="card">
+						<div class="card-header bg-dark text-light">Register</div>
+						<div class="card-body">
+							<!-- <form action="../controllers/con_register.php" class="mb-3" method="POST" > -->
+							<form action="" class="mb-3" id="form_register" method="post">
+								<strong><label>Last Name</label></strong>
+								<input type="text" class="form-control mb-3" id="last_name">
+								<p class="validation"></p>					
+							
+								<strong><label>First Name</label></strong>
+								<input type="text" class="form-control mb-3" id="first_name">
+								<p class="validation"></p>
+										
+								<strong><label>Email</label></strong>
+								<!-- <input type="email" class="form-control mb-3" id="email" placeholder="We'll never share your email with anyone else" data-validation="email"> -->
+								<input type="email" class="form-control mb-3" id="email" placeholder="We'll never share your email with anyone else">
+								<p class="validation"></p>
+
+								<strong><label>Password</label></strong>
+								<input type="password" class="form-control mb-3" id="password">
+								<p class="validation"></p>
+
+								<strong><label>Confirm Password</label></strong>
+								<input type="password" class="form-control mb-3" id="c_password">
+								<p class="validation"></p>
+
+								<strong><label>Address</label></strong>
+								<textarea type="text" class="form-control mb-3" id="address"></textarea>
+								<p class="validation"></p>
+								
+								<strong><p id="register_msg"></p></strong>
+								<div class="text-center">
+								<input id="register_btn" class='btn btn-dark w-25' type='button' value='Submit' >
+			   					<input class='btn btn-dark w-25' type='reset' value='Clear'>
+			   					</div>
+			   					
+		   					</form>
+						</div>
+					</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-
+<?php } ?> 
 <?php include "../partials/footer.php";?>
 
 
