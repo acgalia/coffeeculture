@@ -1,5 +1,5 @@
-<?php include "../partials/header.php";
-	  include "../partials/navbar.php";
+<?php require_once "../partials/header.php";
+	  require_once "../partials/navbar.php";
 
 	  $grand_total = $_SESSION["grand_total"];
 
@@ -33,7 +33,7 @@
 	</div>
 </div>
 
-<?php include "../partials/footer.php";?>
+<?php require_once "../partials/footer.php";?>
 
 <script type="text/javascript">
 

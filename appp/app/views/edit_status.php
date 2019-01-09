@@ -1,5 +1,5 @@
-<?php include "../partials/header.php";?>
-<?php include "../partials/adminNavbar.php";?>
+<?php require_once "../partials/header.php";?>
+<?php require_once "../partials/adminNavbar.php";?>
 
 <?php if(isset($_SESSION['admin'])){ ?>
 <div class="container-fluid wallpaper3">
@@ -83,7 +83,7 @@
 	</div>
 </div>
 
-<?php include "../partials/footer.php";?>
+<?php require_once "../partials/footer.php";?>
 
         <?php }else{
                header("Location: admin_login.php");

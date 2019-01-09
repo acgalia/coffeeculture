@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include 'connect.php';
+require_once 'connect.php';
 
 //fetch data
 $user_id = $_SESSION['user_id'];
@@ -28,7 +28,7 @@ $_SESSION["purchase_date"] = $purchase_date;
 
 if($payment_mode_id == 2){
 	require_once 'connect.php';
-	include '../../paypal.php';
+	require_once '../../paypal.php';
 
 }else{
 

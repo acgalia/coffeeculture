@@ -2,9 +2,9 @@
 session_start();
 
 //Database Info
-include 'connect.php';
+require_once 'connect.php';
 
-require "../../vendor/autoload.php";
+require_once "../../vendor/autoload.php";
 use PayPal\Rest\ApiContext;
 use PayPal\Auth\OAuthTokenCredential;
 use PayPal\Api\Payer;

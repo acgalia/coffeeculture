@@ -1,9 +1,9 @@
 	
 <?php
-include "../partials/header.php";	
-include "../partials/navbar.php";
+require_once "../partials/header.php";	
+require_once "../partials/navbar.php";
 
-include '../controllers/connect.php';
+require_once '../controllers/connect.php';
 
 	$name = $_GET['name'];
 
@@ -43,7 +43,7 @@ include '../controllers/connect.php';
 
 
 
-include "../partials/footer.php";
+require_once "../partials/footer.php";
 ?>
 
 <script type="text/javascript">

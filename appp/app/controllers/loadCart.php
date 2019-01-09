@@ -2,7 +2,7 @@
 <?php error_reporting(0);?> 
 <h1>My Cart</h1>
 
-<?php include 'connect.php'; ?>
+<?php require_once 'connect.php'; ?>
 <?php
 
 $data ='
@@ -51,12 +51,28 @@ foreach($_SESSION['cart'] as $id=> $quantity) {
 if(isset($_SESSION['email'])){
   $data .="</tbody></table>
              <hr>
-             <h3 align='right'>Total: &#x20B1; <span id='grandTotal'>". number_format ("$grand_total",2) ."</span><br><a href='checkout.php'><button class='btn btn-success btn-dark'>Check Out</button></a></h3>
+             <h3 align='right'>Total: &#x20B1; <span id='grandTotal'>". number_format ("$grand_total",2) ."</span><br>
+               <a href='catalog.php'>
+                <button class='btn btn-success btn-dark mr-1'>Add items</button>
+               </a>
+
+               <a href='checkout.php'>
+                <button class='btn btn-success btn-dark'>Check Out</button>
+               </a>
+             </h3>
              <hr>";
 }else{
   $data .="</tbody></table>
              <hr>
-             <h3 align='right'>Total: &#x20B1; <span id='grandTotal'>". number_format ("$grand_total",2) ."</span><br><a data-toggle='modal' data-target='#exampleModalCenter'><button class='btn btn-success btn-dark'>Check Out</button></a></h3>
+            <h3 align='right'>Total: &#x20B1; <span id='grandTotal'>". number_format ("$grand_total",2) ."</span><br>
+              <a href='catalog.php'>
+                <button class='btn btn-success btn-dark mr-1'>Add items</button>
+              </a>
+
+              <a data-toggle='modal' data-target='#exampleModalCenter'>
+                <button class='btn btn-success btn-dark'>Check Out</button>
+              </a>
+            </h3>
              <hr>";
 }  
 

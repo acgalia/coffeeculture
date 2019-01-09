@@ -1,5 +1,5 @@
 <?php
-    include "authenticate.php";
+    require_once "authenticate.php";
 
 	$admin_un = $_POST['admin_un'];
 	$admin_pw = $_POST['admin_pw'];

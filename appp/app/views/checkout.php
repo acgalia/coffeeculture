@@ -1,13 +1,13 @@
-<?php include "../partials/header.php";?>
-<?php include "../partials/navbar.php";?>
+<?php require_once "../partials/header.php";?>
+<?php require_once "../partials/navbar.php";?>
 
 <?php
 // $quantity = $_SESSION["quantity"];
 $_SESSION["price"] = $price;
 ?>
 
-<div class="container-fluid wallpaper2 py-5">
-<div class="container opacity pt-3">
+<div class="container-fluid wallpaper2 pt-5">
+<div class="container pt-3">
 	<h1 class="mb-5 text-center">Checkout</h1>	
 	<div class="row mb-5">
 	    <div class="col-lg-1"></div>

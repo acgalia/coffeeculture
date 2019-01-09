@@ -1,8 +1,9 @@
 
   <!-- Footer -->
     <footer class="bg-dark text-light">
-    <div class="container p-3">
+    <div class="container-fluid p-3">
       <div class="row">
+        <div class="col-lg-2"></div>
         <div class="col-lg-4">
           <h5>Here at <span style="color:#ff4f17">Coffee Culture</span></h5>
           <p>It is our mission to provide an avenue for individuals like you and me to experience great coffee and to continue doing so without sacrificing quality, cost and convenience. The specialty coffee industry is growing and we want you to be part of it, not just as a coffee drinker but as one who has become part of the Coffee Culture.
@@ -18,15 +19,16 @@
 
           ?>
         </div>
-        <div class="col-lg-2 text-center">
+        <div class="col-lg-4 text-center">
           <a href="#" class="p-1"><i class="fab fa-facebook"></i></a>
           <a href="#" class="p-1"><i class="fab fa-twitter"></i></a>
           <a href="#" class="p-1"><i class="fab fa-instagram"></i></a>
           <a href="#" class="p-1"><i class="fab fa-snapchat"></i></a>
+           <div>
+              <p>Legal | Terms of Use | Privacy Policy | Cookie Policy | Support</p>
+            </div>
         </div>
-        <div class="col-lg-6 text-left">
-          <p>Legal | Terms of Use | Privacy Policy | Cookie Policy | Support</p>
-        </div>
+       
         <div class="col-lg-12 text-center">
           All rights reserved: Coffee Culture, 3rd Floor Caswynn Building, No. 134 Timog Avenue, Sacred Heart, Diliman, Quezon City, 1103
         </div>

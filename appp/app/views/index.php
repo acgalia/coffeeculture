@@ -1,13 +1,13 @@
-<?php include "../partials/header.php";?>
-<?php include "../partials/navbar.php";?>
-<?php include "../partials/carousel.php";?>
+<?php require_once "../partials/header.php";?>
+<?php require_once "../partials/navbar.php";?>
+<?php require_once "../partials/carousel.php";?>
 
 <div class="container-fluid wallpaper4 py-5">
   <div class="container">
   <h1 class="text-center">Featured Items</h1>
    <div class="row">
       <?php 
-        require "../controllers/connect.php";
+        require_once "../controllers/connect.php";
         $sql = "SELECT * FROM items LIMIT 4";
         $result = mysqli_query($conn,$sql);
 
@@ -41,7 +41,7 @@
   <!-- <button class='btn btn-block btn-secondary'><i class='far fa-heart'></i> Add to wishlist</button> -->
   </div>
 </div>
-<?php include "../partials/footer.php";?>
+<?php require_once "../partials/footer.php";?>
 
 <script type="text/javascript">
   // script for add to cart

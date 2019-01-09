@@ -1,5 +1,5 @@
-<?php include "../partials/header.php";?>
-<?php include "../partials/navbar.php";?>
+<?php require_once "../partials/header.php";?>
+<?php require_once "../partials/navbar.php";?>
 
 <div class="container-fluid wallpaper3 py-5">
   <div class="container opacity">
@@ -8,7 +8,12 @@
   		<div class="col-lg-7 col-md-7">
         <?php if(isset($_SESSION['email'])){
           
-          echo "<strong>404 Page not found</strong>";
+          echo "
+                <div class='card opacity4'>
+                  <h2>Unable to Find This Page</h2> 
+                  <p>It may be unavailable or the address may be incorrect. Select the Logo to continue browsing Coffee Culture.</p>  
+                </div>
+              ";
 
         }else{
           echo "
@@ -39,4 +44,4 @@
 </div>
 
 
-<?php include "../partials/footer.php";?>
+<?php require_once "../partials/footer.php";?>

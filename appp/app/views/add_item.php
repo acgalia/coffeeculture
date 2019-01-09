@@ -1,8 +1,8 @@
 <?php
-include "../partials/header.php";	
-include "../partials/navbar.php";
+require_once "../partials/header.php";	
+require_once "../partials/navbar.php";
 
-include '../controllers/connect.php';
+require_once '../controllers/connect.php';
 ?>
 <div class="container">
 	<div class="row">
@@ -38,4 +38,4 @@ include '../controllers/connect.php';
 	</div>
 </div>
 	
-<?php include "../partials/footer.php";?>
+<?php require_once "../partials/footer.php";?>

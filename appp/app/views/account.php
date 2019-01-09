@@ -1,5 +1,5 @@
-<?php include "../partials/header.php";?>
-<?php include "../partials/navbar.php";?>
+<?php require_once "../partials/header.php";?>
+<?php require_once "../partials/navbar.php";?>
 
 <div class="container-fluid wallpaper py-5">
 <div class="container opacity">
@@ -9,7 +9,7 @@
 		<?php
 			$user_id = $_SESSION['user_id'];
 
-			require "../controllers/connect.php";
+			require_once "../controllers/connect.php";
 			$sql = "SELECT * FROM users WHERE id = $user_id";
 			$result = mysqli_query($conn,$sql);
 			 if(mysqli_num_rows($result) > 0){ ?>
@@ -22,7 +22,7 @@
 		<?php } ?>
 
 		</div>
-		<div class="col-lg-10">
+		<div class="col-lg-10 my-auto">
 			<?php
 			if (isset($_SESSION['email'])){
 				echo "
@@ -62,4 +62,4 @@
 </div>
 </div>
 
-<?php include "../partials/footer.php";?>
+<?php require_once "../partials/footer.php";?>

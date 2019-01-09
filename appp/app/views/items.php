@@ -1,6 +1,6 @@
-<?php include "../partials/header.php";?>
-<?php include "../partials/adminNavbar.php";?>
-<?php include "../controllers/authenticate.php";?>
+<?php require_once "../partials/header.php";?>
+<?php require_once "../partials/adminNavbar.php";?>
+<?php require_once "../controllers/authenticate.php";?>
 <!-- session_start(); -->
 <?php if(isset($_SESSION['admin'])){ ?>
 	<div class="container-fluid wallpaper3 py-5">
@@ -19,6 +19,14 @@
 							<div class="col-lg-4"></div>
 								<div class="col-lg-4 text-center">
 								<h3>Item List</h3>
+								
+									<?php
+										if(isset($_SESSION['message'])){
+											echo "<p style='color:green;'>". $_SESSION['message'] ."</p>" ;
+											unset($_SESSION['message']);
+										}
+									?>
+								
 									<a class='nav-link text-light' href='' data-toggle='modal' data-target='#itemModal'><i class='fas fa-plus-circle'></i> Add Item</a>
 								</div>
 						</div>
@@ -45,7 +53,7 @@
 											
 													<tr>
 														<!-- <td><?= $row['id']?></td> -->
-														<td><img class="img-fluid item_image" src="<?= $row['img_path']?>"></td>
+														<td><img class="item_image img-thumbnail" src="<?= $row['img_path']?>"></td>
 														<td><?= $row['name']?></td>
 														<td><?= $row['price']?></td>
 														<td><?= $row['description']?></td>
@@ -116,7 +124,7 @@
   </div>
 </div>
 
-<?php include "../partials/footer.php";?>
+<?php require_once "../partials/footer.php";?>
 
 <script type="text/javascript">
 

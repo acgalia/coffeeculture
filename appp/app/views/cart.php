@@ -1,5 +1,5 @@
-<?php include "../partials/header.php";?>
-<?php include "../partials/navbar.php";?>
+<?php require_once "../partials/header.php";?>
+<?php require_once "../partials/navbar.php";?>
 
 <!-- cart.php -->
 <!-- <pre>
@@ -14,12 +14,14 @@
 <?php if($_SESSION['cart'] == ""){
 	echo "
 			<div class='container-fluid wallpaper6 py-3'>
-				<div class='container heightvh'>
+				<div class='container'>
 					<div class='row'>
-						<div class='col-lg-1'></div>
-						<div class='col-lg-10 text-center'>
-							<p class='mb-3'>Your cup is empty. There, there.</p>
-							<div><a href='catalog.php'><input type='button' value='Shop Now' class='btn btn-dark'></a></div>
+						<div class='col-lg-5'></div>
+						<div class='col-lg-3 text-center'>
+							<div class='card opacity4'>
+								<p>Your cup is empty. There, there.</p>
+								<div><a href='catalog.php'><input type='button' value='Shop Now' class='btn btn-dark'></a></div>
+							</div>
 						</div>					
 					</div>
 				</div>
@@ -45,7 +47,7 @@
 	
 
 
-<?php include "../partials/footer.php";?>
+<?php require_once "../partials/footer.php";?>
 
 <script type="text/javascript">
 	function loadCart(){

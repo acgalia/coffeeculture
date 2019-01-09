@@ -1,6 +1,6 @@
-<?php include "../partials/header.php";?>
-<?php include "../partials/adminNavbar.php";?>
-<?php include "../controllers/authenticate.php";?>
+<?php require_once "../partials/header.php";?>
+<?php require_once "../partials/adminNavbar.php";?>
+<?php require_once "../controllers/authenticate.php";?>
 <!-- session_start(); -->
 <?php if(isset($_SESSION['admin'])){ ?>
 	<div class="container-fluid wallpaper3 py-5">
@@ -29,7 +29,7 @@
 								</tr>
 							<tbody>
 								<?php
-									require "../controllers/connect.php";
+									require_once "../controllers/connect.php";
 									$sql = "SELECT orders.id, orders.transaction_code, orders.purchase_date, users.lastname, users.firstname, status.name FROM ((orders INNER JOIN users ON orders.user_id = users.id) INNER JOIN status ON orders.status_id = status.id) ORDER BY orders.purchase_date DESC";
 									$result = mysqli_query($conn,$sql);
 									
@@ -59,7 +59,7 @@
                header("Location: admin_login.php");
  } ?>
 
-<?php include "../partials/footer.php";?>
+<?php require_once "../partials/footer.php";?>
 
 <script type="text/javascript">
 

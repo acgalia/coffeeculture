@@ -1,6 +1,6 @@
 <?php 
 	require_once 'connect.php';
-
+	session_start();
 	$id = $_POST['id'];
 	$name = $_POST['name'];
 	$price = $_POST['price'];
@@ -13,6 +13,7 @@
 	$result = mysqli_query($conn, $sql);
 
 	if($result){
+		$_SESSION['message'] = "Item was successfully edited!";
 		header("Location: ../views/items.php");
 	}
 ?>

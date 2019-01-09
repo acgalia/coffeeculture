@@ -5,11 +5,7 @@
  */
 
 *{
-  font-family: 'Thasadith', sans-serif;
-}
-
-body {
-  /*padding-top: 54px;*/
+  font-family: 'Roboto Slab', serif;
 }
 
 .logo {
@@ -17,9 +13,9 @@ body {
 	height: 5.5rem;
 }
 
-.img-fluid {
-	max-width: 100%;
-	height: auto;
+.item_image {
+	width: 60%;
+	height: 50%;
 }
 
 a {
@@ -41,11 +37,6 @@ a.cont_shop {
   color: #ffbc5f;
 }
 
-/*.item_name {
-  color: white;
-}*/
-
-
 .card {
   height: 100%;
 }
@@ -56,22 +47,10 @@ a.cont_shop {
   font-size: 1.5em;
 }
 
-/*.account {
-  background-color: #ffbc5f;
-}
-*/
 .container {
-/*  height: 70vh;*/
+  min-height: 70vh;
 }
 
-.heightvh {
-  height: 70vh;
-}
-
-.item_image {
-  width: 15%;
-  height: 15%;
-}
 
 .wallpaper {
   background-image: url("../images/beans.png");
@@ -203,3 +182,26 @@ a.cont_shop {
     padding-top: 56px;
   }*/
 }
+
+/*mobile*/
+@media only screen and (max-width: 400px) {
+    .item_image {
+    width: 100%;
+    height: 50%;
+    }
+
+}
+/*end mobile*/
+
+/*tablet*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+
+}
+/*end tablet*/
+
+/*desktop only*/
+@media only screen and (min-width: 1024px) {
+
+}
+/*end desktop*/

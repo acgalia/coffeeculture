@@ -25,7 +25,7 @@ require_once 'app/controllers/connect.php';
 // 	die("Connection failed: "  . mysqli_connect_error());
 // } 
 
-require "vendor/autoload.php";
+require_once "vendor/autoload.php";
 use PayPal\Rest\ApiContext;
 use PayPal\Auth\OAuthTokenCredential;
 use PayPal\Api\Payer;

@@ -1,5 +1,5 @@
-<?php include "../partials/header.php";?>
-<?php include "../partials/navbar.php";?>
+<?php require_once "../partials/header.php";?>
+<?php require_once "../partials/navbar.php";?>
 
 <div class="container-fluid wallpaper2 py-5">
 	<div class="container opacity2">
@@ -60,4 +60,4 @@
 </div>
 
 
-<?php include "../partials/footer.php";?>
+<?php require_once "../partials/footer.php";?>

@@ -1,5 +1,5 @@
-<?php include "../partials/header.php";?>
-<?php include "../partials/navbar.php";?>
+<?php require_once "../partials/header.php";?>
+<?php require_once "../partials/navbar.php";?>
 
 
 <!-- button categories  -->
@@ -132,7 +132,7 @@
 </div>
 
    <!-- Footer -->
-<?php include "../partials/footer.php" ;?>
+<?php require_once "../partials/footer.php" ;?>
 
 <!-- script for sort categories -->
 <script type="text/javascript">
